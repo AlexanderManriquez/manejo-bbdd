@@ -23,15 +23,6 @@ city VARCHAR(100),
 created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT NOW()
 );
 
--- Empleados
-CREATE TABLE employees (
-id SERIAL PRIMARY KEY,
-first_name VARCHAR(100) NOT NULL,
-last_name VARCHAR(100) NOT NULL,
-role VARCHAR(50),
-hire_date DATE
-);
-
 -- Productos
 CREATE TABLE products (
 id SERIAL PRIMARY KEY,
@@ -47,7 +38,6 @@ category_id INTEGER REFERENCES categories(id) ON DELETE SET NULL
 CREATE TABLE orders (
 id SERIAL PRIMARY KEY,
 customer_id INTEGER NOT NULL REFERENCES customers(id) ON DELETE CASCADE,
-employee_id INTEGER REFERENCES employees(id) ON DELETE SET NULL,
 status VARCHAR(30) NOT NULL DEFAULT 'pendiente',
 total NUMERIC(10,2) NOT NULL DEFAULT 0,
 order_date TIMESTAMP WITHOUT TIME ZONE DEFAULT NOW()
