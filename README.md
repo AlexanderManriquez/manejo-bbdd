@@ -49,7 +49,6 @@ Si prefieres usar Docker y no tener PostgreSQL instalado localmente, puedes ejec
 
 ## Siguientes pasos recomendados
 
-- Añadir un diagrama ER y/o `schema/diagram.png` para visualizar relaciones.
 - Añadir un script `reset_db.ps1` o `Makefile` para automatizar creación y carga de datos.
 - Incluir ejemplos de salida esperada o tests SQL para validar integridad.
 
