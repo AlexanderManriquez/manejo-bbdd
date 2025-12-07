@@ -16,5 +16,5 @@ Esta carpeta contiene las consultas DQL del proyecto "Tienda En Línea". Incluye
 Ejecutar el archivo dentro del motor SQL correspondiente:
 
 ```bash
-psql -d tienda_db -f dql/consultas_dql.sql
+psql -d tienda_db -f queries/01_examples.sql
 ```
